@@ -19,14 +19,19 @@ module.exports = (env, options) => ({
     filename: "app.js",
     path: path.resolve(__dirname, "../priv/static/js"),
   },
+  resolve: {
+    extensions: [".ts", ".tsx", ".js", ".jsx"],
+    modules: ["deps", "node_modules"],
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-        },
+        test: /\.tsx?$/,
+        use: ["babel-loader", "ts-loader"],
+      },
+      {
+        test: /\.jsx?$/,
+        use: ["babel-loader"],
       },
       {
         test: /\.s?css$/,
