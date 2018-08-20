@@ -10,6 +10,7 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "sourceMap": true,
     "target": "es2015"
   },

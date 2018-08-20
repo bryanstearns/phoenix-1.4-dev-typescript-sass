@@ -10,7 +10,8 @@
     "format:js": "prettier --write {.,**}/*.js",
     "format:ts": "prettier --write {.,**}/*.{ts,tsx} && tslint --fix -p .",
     "format:json": "prettier --write {.,**}/*.json",
-    "xxformat:md": "prettier --write {.,**}/*.md"
+    "xxformat:md": "prettier --write {.,**}/*.md",
+    "test": "jest"
   },
   "dependencies": {
     "phoenix": "file:../deps/phoenix",
@@ -43,5 +44,20 @@
     "uglifyjs-webpack-plugin": "^1.2.4",
     "webpack": "4.4.0",
     "webpack-cli": "^2.0.10"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(src|tests)/.*\\.test\\.tsx?$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/tests/setup.ts"
   }
 }
