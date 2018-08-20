@@ -20,11 +20,6 @@ import "phoenix_html"
 require("babel-polyfill")
 import * as React from "react"
 import ReactDOM from "react-dom"
+import { RootComponent } from "./app/root-component"
 
-class App extends React.Component {
-  render() {
-    return <h2>Hello, World!</h2>
-  }
-}
-
-ReactDOM.render(<App />, document.getElementById("app"))
+ReactDOM.render(<RootComponent />, document.getElementById("app"))
