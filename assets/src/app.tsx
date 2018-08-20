@@ -17,6 +17,7 @@ import "phoenix_html"
 // Local files can be imported directly using relative paths, for example:
 // import socket from "./socket"
 
+require("babel-polyfill")
 import * as React from "react"
 import ReactDOM from "react-dom"
 
