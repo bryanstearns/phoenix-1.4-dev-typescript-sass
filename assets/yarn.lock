@@ -45,6 +45,19 @@
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/@types/phoenix/-/phoenix-0.0.4.tgz#6ada6be91dfdc1fa77ed57691f92821920f71d12"
 
+"@types/prop-types@*":
+  version "15.5.5"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.5.5.tgz#17038dd322c2325f5da650a94d5f9974943625e3"
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^16.4.11":
+  version "16.4.11"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.11.tgz#330f3d864300f71150dc2d125e48644c098f8770"
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
+
 "@webpack-contrib/schema-utils@^1.0.0-beta.0":
   version "1.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/@webpack-contrib/schema-utils/-/schema-utils-1.0.0-beta.0.tgz#bf9638c9464d177b48209e84209e23bee2eb4f65"
@@ -878,6 +891,14 @@ babel-plugin-transform-strict-mode@^6.24.1:
   dependencies:
     babel-runtime "^6.22.0"
     babel-types "^6.24.1"
+
+babel-polyfill@^6.26.0:
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.26.0.tgz#379937abc67d7895970adc621f284cd966cf2153"
+  dependencies:
+    babel-runtime "^6.26.0"
+    core-js "^2.5.0"
+    regenerator-runtime "^0.10.5"
 
 babel-preset-env@^1.6.1:
   version "1.7.0"
@@ -1885,6 +1906,10 @@ cssstyle@^1.0.0:
   resolved "https://registry.yarnpkg.com/cssstyle/-/cssstyle-1.0.0.tgz#79b16d51ec5591faec60e688891f15d2a5705129"
   dependencies:
     cssom "0.3.x"
+
+csstype@^2.2.0:
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.5.6.tgz#2ae1db2319642d8b80a668d2d025c6196071e788"
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -5657,6 +5682,10 @@ reduce-function-call@^1.0.1:
 regenerate@^1.2.1:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.4.0.tgz#4a856ec4b56e4077c557589cae85e7a4c8869a11"
+
+regenerator-runtime@^0.10.5:
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.10.5.tgz#336c3efc1220adcedda2c9fab67b5a7955a33658"
 
 regenerator-runtime@^0.11.0:
   version "0.11.1"
